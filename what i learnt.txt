@@ -1,2 +1,16 @@
 we will use relative path for going back one folder up 
 But we will use location for search results for going back or forward
+
+  { path: 'parent', component: ParentComponent },
+
+
+import { Location } from '@angular/common';
+
+
+  constructor(private router: Router, private location: Location) {}
+    this.router.navigate(['child']);
+    this.location.back();
+    this.location.forward();
+
+
+    this.router.navigate(['../parent'], { relativeTo: this.route });
