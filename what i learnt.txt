@@ -1,0 +1,2 @@
+we will use relative path for going back one folder up 
+But we will use location for search results for going back or forward
